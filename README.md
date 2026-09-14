@@ -59,9 +59,14 @@ Every PR Sentra has opened, with its real CI status and merge state pulled live 
 ![Pull requests with live CI and merge status](screenshots/pull_request.png)
 
 ### Reports
-Per-project, per-scan security reports, ready to export.
+Per-project, per-scan security reports, ready to export as PDF, HTML, CSV, or JSON.
 
 ![Reports list](screenshots/report.png)
+
+Not just a mockup — here are two real exported reports, straight off the dashboard, from two different scanned projects:
+
+- [Content Generation — PDF](reports/content-generation-report.pdf) · [same report as HTML](reports/content-generation-report.html) — 2 medium CORS findings, both fixed, security score 90 → 100
+- [sentra-test-multilang — HTML](reports/sentra-test-multilang-report.html) — 3 critical findings (SQL injection, command injection) across PHP and Java, all fixed, security score 40 → 100
 
 ### Audit trail
 An append-only log of every action taken on the account. Nothing here can be edited or deleted after the fact, by design.
