@@ -72,7 +72,7 @@ An append-only log of every action taken on the account. Nothing here can be edi
 
 Sentra isn't only a dashboard. A companion VS Code extension runs the same detect → explain → fix → verify pipeline inline, so a developer can catch and fix a vulnerability without ever opening a browser.
 
-**Detects it for real** — a genuine command-injection vulnerability (CWE-78), found with the same Semgrep engine the backend uses, no toy example.
+**Detects it for real** — a genuine command-injection vulnerability (CWE-78), found with the same Semgrep engine the backend uses.
 
 ![VS Code: real findings on real vulnerable code](screenshots/vs_code_fixes.png)
 
