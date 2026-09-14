@@ -68,6 +68,22 @@ An append-only log of every action taken on the account. Nothing here can be edi
 
 ![Audit trail](screenshots/audit_trail.png)
 
+### VS Code extension — the same pipeline, without leaving your editor
+
+Sentra isn't only a dashboard. A companion VS Code extension runs the same detect → explain → fix → verify pipeline inline, so a developer can catch and fix a vulnerability without ever opening a browser.
+
+**Detects it for real** — a genuine command-injection vulnerability (CWE-78), found with the same Semgrep engine the backend uses, no toy example.
+
+![VS Code: real findings on real vulnerable code](screenshots/vs_code_fixes.png)
+
+**Explains it in plain language** — right where the code lives: why it's dangerous, and what accepting the fix will actually change.
+
+![VS Code: inline AI explanation](screenshots/vs_code_fixes_explain.png)
+
+**Fixes it, and proves the fix worked** — one click replaces the vulnerable `os.system()` call with a safe `subprocess.run()` call, and an immediate re-scan reports zero findings. Not "trust me" — a second, independent scan.
+
+![VS Code: fix applied, re-scan confirms 0 findings](screenshots/vs_code_after_resolve_fixes.png)
+
 ## Why it's built this way
 
 Cloud AI code-review tools can explain and fix vulnerabilities, but only by sending your source code to someone else's server, a non-starter for regulated industries, proprietary code, or anyone who just doesn't want to. Sentra runs the whole pipeline, scanning and the LLM both, entirely on the local machine.
@@ -80,7 +96,7 @@ The harder problem, and the actual point of this project, is that a local LLM wi
 - **Frontend** — React, Vite
 - **AI** — Ollama running Gemma, through a custom MCP-style tool layer (Scan / Analyze / Fix / Validate)
 - **Scanning** — Semgrep
-- **Also included** — a companion VS Code extension for inline, learning-focused review
+- **Also included** — a companion VS Code extension for inline, learning-focused review (see screenshots above)
 
 ## Status
 
