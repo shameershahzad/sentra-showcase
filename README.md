@@ -4,7 +4,7 @@ Sentra is an agentic AI security platform that finds vulnerabilities in real cod
 
 It scans with Semgrep, reasons and writes fixes with a locally hosted Gemma model running through Ollama, and verifies every fix it generates before a human ever sees it. Built for a world where more code is written by AI, and reviewed by humans, than ever before.
 
-This repo is a showcase: real screenshots of the running product, real data, real fixes. The full source lives in a private repository as this is an active Final Year Project.
+This repo is a showcase: real screenshots of the running product, real data, real fixes.
 
 ## What it actually does
 
