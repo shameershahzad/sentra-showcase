@@ -104,4 +104,6 @@ The harder problem, and the actual point of this project, is that a local LLM wi
 
 ## Status
 
-Actively developed as a Final Year Project. The scan, analyze, fix, and validate pipeline is complete and has been tested end to end against real code, real vulnerabilities, and a real running model, not mocked components.
+Actively developed as a Final Year Project. The scan, analyze, fix, and validate pipeline is functional and has been tested end to end against real code, real vulnerabilities, and a real running model, not mocked components — the screenshots above are all real runs.
+
+Fix generation, on both the dashboard and the VS Code extension, is occasionally inconsistent (a fix doesn't generate on every run for every finding) and is an active area of ongoing debugging and refinement, since a locally hosted model is inherently less predictable than a cloud-scale one.
